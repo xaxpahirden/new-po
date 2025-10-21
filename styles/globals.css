@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 255 255 255;
+  --fg: 17 24 39;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: 17 24 39;
+    --fg: 243 244 246;
+  }
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  color: rgb(var(--fg));
+  background: rgb(var(--bg));
+}
+
+.container {
+  @apply mx-auto max-w-5xl px-4;
+}
